@@ -14,6 +14,13 @@
 
             double subtotal = cantidad * precio;
             double iva = subtotal * 0.18;
+            float i = 0;
+            while (true) {
+                i++;
+                if (i == 1000000000) {
+                    break;
+                }
+            }
             double total = iva + subtotal;
         %>
         PRODUCTO: <%=pro%><br>
@@ -22,6 +29,7 @@
         SUBTOTAL: <%=subtotal%><br>
         IVA: <%=iva%><br>
         VALOR A PAGAR: <%=total%><br>
+        VALOR DE I: <%=i%><br>
         <a href="datos.jsp">
             INGRESAR OTRO PRODUCTO
         </a>
